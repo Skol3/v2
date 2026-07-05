@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Argentina Sports Stars</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    
+
+    <button class="menu-btn">
+        ☰
+    </button>
+
+</header>
+
+<button class="menu-btn" id="menuBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav class="side-menu" id="sideMenu">
+
+    <button class="close-btn" id="closeBtn">&times;</button>
+
+    <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#players">Players</a></li>
+
+        <li><a href="#gallery">Gallery</a></li>
+
+        <li><a href="#news">News</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+<div class="hero-content">
+
+    <img src="images/logo.png" class="hero-logo" alt="Argentina Sports Stars">
+
+    <h1>
+        ARGENTINA<br>
+        SPORTS STARS
+    </h1>
+
+    <p>
+        Developing Talent. Building Champions. Inspiring the Future.
+    </p>
+
+    <a href="#about" class="btn">
+    JOIN OUR JOURNEY →
+</a>
+
+</div>
+
+<div class="scroll">
+
+    <div class="mouse"></div>
+
+    <span>SCROLL DOWN</span>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+
+const menu=document.getElementById("sideMenu");
+const open=document.getElementById("menuBtn");
+const close=document.getElementById("closeBtn");
+
+open.onclick=()=>{
+
+    menu.classList.add("active");
+
+}
+
+close.onclick=()=>{
+
+    menu.classList.remove("active");
+
+}
+
+</script>
+
+</body>
+
+</html>
