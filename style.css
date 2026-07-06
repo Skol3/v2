@@ -746,11 +746,6 @@ padding:16px 34px;
 
 @media (max-width:768px){
 
-.hero::before{
-    background:url("images/hero-bg-mobile.jpg") center center/cover no-repeat;
-}
-
-
 .hero{
 
     height:100dvh;
@@ -763,11 +758,9 @@ padding:16px 34px;
 
 .hero::before{
 
+    background:url("images/hero-bg-mobile.jpg") center center/cover no-repeat;
+
     animation:none;
-
-    background-position:center top;
-
-    background-size:cover;
 
     transform:none;
 
