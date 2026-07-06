@@ -15,55 +15,77 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
 
+    <button class="mobile-menu-btn" id="mobileBtn">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
 <header>
-
-    
-
-    <button class="menu-btn">
-        ☰
-    </button>
 
 </header>
 
-<button class="menu-btn" id="menuBtn">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+<div class="menu-overlay" id="menuOverlay"></div>
 
-<nav class="side-menu" id="sideMenu">
-
-    <button class="close-btn" id="closeBtn">&times;</button>
+<nav class="side-menu">
 
     <ul>
 
-        <li><a href="#home">Home</a></li>
+        <li class="active">
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+        </li>
 
-        <li><a href="#about">About</a></li>
+        <li>
+            <a href="#about">
+                <i class="fa-solid fa-users"></i>
+                <span>About Us</span>
+            </a>
+        </li>
 
-        <li><a href="#players">Players</a></li>
+        <li>
+            <a href="#players">
+                <i class="fa-solid fa-futbol"></i>
+                <span>Players</span>
+            </a>
+        </li>
 
-        <li><a href="#gallery">Gallery</a></li>
+        <li>
+            <a href="#gallery">
+                <i class="fa-solid fa-image"></i>
+                <span>Gallery</span>
+            </a>
+        </li>
 
-        <li><a href="#news">News</a></li>
+        <li>
+            <a href="#news">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>News</span>
+            </a>
+        </li>
 
-        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </li>
 
     </ul>
 
 </nav>
 
-<section class="hero">
+<section class="hero" id="home">
 
     <div class="overlay"></div>
 
-    <a href="#about" class="btn">
-        JOIN OUR JOURNEY →
-    </a>
 
 
 </section>
@@ -89,6 +111,22 @@ close.onclick=()=>{
 }
 
 </script>
+
+
+<nav class="mobile-menu" id="mobileMenu">
+
+    <button class="mobile-close" id="mobileClose">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#players">Players</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+
+</nav>
 
 </body>
 

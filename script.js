@@ -1,11 +1,25 @@
-const menuBtn = document.querySelector(".menu-btn");
-const closeBtn = document.querySelector(".close-btn");
-const sideMenu = document.querySelector(".side-menu");
+const mobileBtn = document.getElementById("mobileBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileClose = document.getElementById("mobileClose");
 
-menuBtn.addEventListener("click", () => {
-    sideMenu.classList.add("active");
-});
+mobileBtn.onclick = () => {
 
-closeBtn.addEventListener("click", () => {
-    sideMenu.classList.remove("active");
+    mobileMenu.classList.add("show");
+
+}
+
+mobileClose.onclick = () => {
+
+    mobileMenu.classList.remove("show");
+
+}
+
+document.querySelectorAll(".mobile-menu a").forEach(link=>{
+
+    link.onclick=()=>{
+
+        mobileMenu.classList.remove("show");
+
+    }
+
 });
