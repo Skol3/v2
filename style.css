@@ -739,3 +739,39 @@ padding:16px 34px;
 
 }
 }
+
+/* ===========================
+   MOBILE HERO FIX
+=========================== */
+
+@media (max-width:768px){
+
+.hero{
+
+    height:100dvh;
+
+    padding:0;
+
+    align-items:flex-end;
+
+}
+
+.hero::before{
+
+    animation:none;
+
+    background-position:center top;
+
+    background-size:cover;
+
+    transform:none;
+
+}
+
+.overlay{
+
+    background:rgba(5,15,25,.25);
+
+}
+
+}
