@@ -950,3 +950,165 @@ padding:16px 34px;
 }
 
 }
+
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+.about-hero::before{
+
+    background:url("images/hero-about.jpg") center center/cover no-repeat;
+
+}
+
+.about-section{
+
+    padding:100px 0;
+
+    background:#081523;
+
+}
+
+.about-section .container{
+
+    width:min(1100px,90%);
+    margin:auto;
+
+}
+
+.about-section h2{
+
+    font-size:46px;
+    margin-bottom:30px;
+
+}
+
+.about-section p{
+
+    font-size:20px;
+    color:#c8d6e5;
+    line-height:1.8;
+    max-width:850px;
+
+}
+
+/* ===========================
+   MISSION
+=========================== */
+
+.mission{
+
+    padding:100px 0;
+
+    background:#0b1c2d;
+
+}
+
+.mission .container{
+
+    width:min(1200px,90%);
+    margin:auto;
+
+}
+
+.mission h2{
+
+    text-align:center;
+    font-size:46px;
+    margin-bottom:60px;
+
+}
+
+.mission-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#2EB8FF;
+
+    box-shadow:0 0 35px rgba(46,184,255,.25);
+
+}
+
+.card i{
+
+    font-size:42px;
+
+    color:#2EB8FF;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    font-size:24px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.about-hero::before{
+
+    background:url("images/hero-about-mobile.jpg") center center/cover no-repeat;
+
+}
+
+.about-section{
+
+    padding:70px 0;
+
+}
+
+.about-section h2{
+
+    font-size:34px;
+
+}
+
+.about-section p{
+
+    font-size:17px;
+
+}
+
+.mission{
+
+    padding:70px 0;
+
+}
+
+.mission-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
