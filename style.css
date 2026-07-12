@@ -363,7 +363,15 @@ ul{
 
 .about-hero::before{
 
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
     background:url("images/hero-about.jpg") center center/cover no-repeat;
+
+    z-index:-1;
 
 }
 
@@ -668,3 +676,26 @@ ul{
     }
 
 }
+
+/* ==========================================
+   ABOUT HERO MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .about-hero::before{
+
+        background:url("images/hero-about-mobile.jpg") center center/cover no-repeat;
+
+        background-size:cover;
+
+        background-position:center;
+
+        animation:none;
+
+        transform:none;
+
+    }
+
+}
+
