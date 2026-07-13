@@ -50,7 +50,7 @@ ul{
 
     position:relative;
 
-    height:100vh;
+    min-height:100dvh;
 
     display:flex;
 
@@ -375,17 +375,6 @@ ul{
 
 }
 
-@media(max-width:768px){
-
-    .about-hero::before{
-
-        background:url("images/hero-about-mobile.jpg") center center/cover no-repeat;
-
-        animation:none;
-
-    }
-
-}
 
 /* ==================================================
    PAGE SECTIONS
@@ -752,9 +741,11 @@ ul{
 
 }
 
-.side-menu{
+.players-hero::before{
 
-    display:none !important;
+    background:url("images/hero-players-mobile.jpg") center center/cover no-repeat;
+
+    animation:none;
 
 }
 
@@ -815,24 +806,6 @@ ul{
 
 }
 
-.top-menu a{
-
-    color:#fff;
-
-    text-decoration:none;
-
-    font-weight:500;
-
-    transition:.3s;
-
-}
-
-.top-menu a:hover,
-.top-menu a.active{
-
-    color:#2EB8FF;
-
-}
 
 /*==============================
 PLAYERS HERO
@@ -846,7 +819,7 @@ PLAYERS HERO
 
 .players-hero{
 
-    height:100vh;
+    min-height:100dvh;
 
 }
 
@@ -1213,27 +1186,5 @@ JOIN TEAM
     box-shadow:
 
         0 0 45px rgba(46,184,255,.7);
-
-}
-
-/* ==========================================
-   ABOUT HERO MOBILE
-========================================== */
-
-@media (max-width:768px){
-
-    .about-hero::before{
-
-        background:url("images/hero-about-mobile.jpg") center center/cover no-repeat;
-
-        background-size:cover;
-
-        background-position:center;
-
-        animation:none;
-
-        transform:none;
-
-    }
 
 }
