@@ -1203,12 +1203,21 @@ JOIN TEAM
         display:none;
     }
 
+}
+
+/* ==========================================
+   PLAYERS HERO MOBILE
+========================================== */
+
+@media (max-width:768px){
+
     .players-hero::before{
 
-        background:url("images/hero-players-mobile.jpg") center center/cover no-repeat;
-
+        background-image:url("images/hero-players-mobile.jpg");
         background-size:cover;
-        background-position:center;
+        background-position:center center;
+        background-repeat:no-repeat;
+
         animation:none;
         transform:none;
 
