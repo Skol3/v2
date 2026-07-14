@@ -744,13 +744,6 @@ ul{
 
 }
 
-.players-hero::before{
-
-    background:url("images/hero-players-mobile.jpg") center center/cover no-repeat;
-
-    animation:none;
-
-}
 
     .mobile-menu-btn{
         display:flex;
@@ -1208,6 +1201,17 @@ JOIN TEAM
 
     .top-header{
         display:none;
+    }
+
+    .players-hero::before{
+
+        background:url("images/hero-players-mobile.jpg") center center/cover no-repeat;
+
+        background-size:cover;
+        background-position:center;
+        animation:none;
+        transform:none;
+
     }
 
 }
