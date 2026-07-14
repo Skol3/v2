@@ -752,8 +752,8 @@ ul{
 
 }
 
-.top-header{
-        display:none;
+    .mobile-menu-btn{
+        display:flex;
     }
 
 }
@@ -1201,5 +1201,13 @@ JOIN TEAM
     padding:100px 0;
 
     background:#06111D;
+
+}
+
+@media (max-width:768px){
+
+    .top-header{
+        display:none;
+    }
 
 }
