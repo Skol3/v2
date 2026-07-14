@@ -1223,4 +1223,9 @@ JOIN TEAM
 
     }
 
+    .players-hero h1{
+    font-size:42px;
+    letter-spacing:1px;
+}
+
 }
