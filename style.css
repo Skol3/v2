@@ -456,6 +456,9 @@ ul{
 
     box-shadow:0 0 35px rgba(46,184,255,.25);
 
+
+    background:rgba(46,184,255,.08);
+
 }
 
 .card i{
@@ -748,6 +751,10 @@ ul{
     animation:none;
 
 }
+
+.top-header{
+        display:none;
+    }
 
 }
 
@@ -1186,5 +1193,13 @@ JOIN TEAM
     box-shadow:
 
         0 0 45px rgba(46,184,255,.7);
+
+}
+
+.mission{
+
+    padding:100px 0;
+
+    background:#06111D;
 
 }
