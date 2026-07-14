@@ -1234,6 +1234,30 @@ JOIN TEAM
 
 }
 
-*{
-    outline:1px solid red;
+/* ===========================
+   MOBILE PLAYERS FIX
+=========================== */
+
+@media (max-width:768px){
+
+    .stats{
+
+        padding:70px 20px;
+
+    }
+
+    .stats-grid{
+
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+
+    }
+
+    .stat-card{
+
+        width:100%;
+
+    }
+
 }
