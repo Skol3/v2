@@ -1220,3 +1220,58 @@ ul{
 
 }
 
+/* ==========================================
+   FOOTER MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.footer{
+
+    padding:60px 20px 25px;
+
+}
+
+.footer-content{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+    text-align:center;
+
+}
+
+.footer-links{
+
+    align-items:center;
+
+}
+
+.footer-social{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-logo h3{
+
+    font-size:24px;
+
+}
+
+.footer-logo p{
+
+    font-size:16px;
+
+}
+
+.footer-bottom{
+
+    font-size:13px;
+
+}
+
+}
