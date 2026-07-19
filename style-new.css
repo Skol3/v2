@@ -993,6 +993,10 @@ ul{
         background:url("images/hero-players-mobile.jpg") center center/cover no-repeat;
     }
 
+    .gallery-hero::before{
+        background:url("images/hero-gallery-mobile.jpg") center center/cover no-repeat;
+    }
+
     /* Sections */
 
     .page-section{
