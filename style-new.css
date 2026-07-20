@@ -1340,3 +1340,211 @@ ul{
 
 }
 
+/*==================================================
+GALLERY
+==================================================*/
+
+.gallery-section{
+
+    padding:120px 0;
+
+    background:#081421;
+
+}
+
+.gallery-section h2{
+
+    text-align:center;
+
+    font-size:52px;
+
+    margin-bottom:20px;
+
+}
+
+.gallery-subtitle{
+
+    text-align:center;
+
+    color:#bfd3e6;
+
+    margin-bottom:60px;
+
+    font-size:20px;
+
+}
+
+.gallery-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:70px;
+
+}
+
+.gallery-filter button{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.gallery-filter button:hover{
+
+    background:#2EB8FF;
+
+}
+
+.gallery-filter .active{
+
+    background:#2EB8FF;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+}
+
+.gallery-item.large{
+
+    grid-column:span 2;
+
+}
+
+.gallery-item.tall{
+
+    grid-row:span 2;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.gallery-item{
+
+    height:340px;
+
+}
+
+.gallery-item.large{
+
+    height:420px;
+
+}
+
+.gallery-item.tall{
+
+    height:705px;
+
+}
+
+.gallery-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(5,15,25,.45);
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gallery-item:hover::after{
+
+    opacity:1;
+
+}
+
+@media(max-width:768px){
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-item,
+.gallery-item.large,
+.gallery-item.tall{
+
+    grid-column:auto;
+
+    grid-row:auto;
+
+    height:300px;
+
+}
+
+.gallery-filter{
+
+    gap:12px;
+
+}
+
+.gallery-filter button{
+
+    padding:12px 22px;
+
+    font-size:15px;
+
+}
+
+}
+
