@@ -997,6 +997,15 @@ ul{
         background:url("images/hero-gallery-mobile.jpg") center center/cover no-repeat;
     }
 
+    .news-hero::before{
+        background:url("images/hero-news-mobile.jpg") center center/cover no-repeat;
+    }
+
+    .contact-hero::before{
+        background:url("images/hero-contact-mobile.jpg") center center/cover no-repeat;
+    }
+    
+
     /* Sections */
 
     .page-section{
@@ -1502,13 +1511,25 @@ GALLERY
 
 .gallery-item:hover img{
 
-    transform:scale(1.08);
+    transform:scale(1.12);
 
 }
 
-.gallery-item:hover::after{
+.gallery-item:hover .gallery-overlay{
 
     opacity:1;
+
+}
+
+.gallery-item:hover .gallery-overlay i{
+
+    transform:translateY(0);
+
+}
+
+.gallery-item:hover .gallery-overlay h3{
+
+    transform:translateY(0);
 
 }
 
@@ -1546,5 +1567,289 @@ GALLERY
 
 }
 
+.lightbox-prev,
+.lightbox-next{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:20px;
+
 }
 
+.lightbox-prev{
+
+    left:15px;
+
+}
+
+.lightbox-next{
+
+    right:15px;
+
+}
+
+}
+
+/*==================================================
+LIGHTBOX
+==================================================*/
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:99999;
+
+}
+
+.lightbox.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:20px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.6);
+
+    animation:zoomImage .35s;
+
+}
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    font-size:55px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close-lightbox:hover{
+
+    color:#2EB8FF;
+
+}
+
+@keyframes zoomImage{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*==================================================
+GALLERY OVERLAY
+==================================================*/
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(6,17,29,.55);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.gallery-overlay i{
+
+    font-size:42px;
+
+    color:white;
+
+    margin-bottom:20px;
+
+    transform:translateY(20px);
+
+    transition:.35s;
+
+}
+
+.gallery-overlay h3{
+
+    font-size:24px;
+
+    color:white;
+
+    letter-spacing:1px;
+
+    transform:translateY(20px);
+
+    transition:.35s;
+
+}
+
+/*==================================================
+LIGHTBOX ARROWS
+==================================================*/
+
+.lightbox-prev,
+.lightbox-next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:65px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.lightbox-prev{
+
+    left:40px;
+
+}
+
+.lightbox-next{
+
+    right:40px;
+
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover{
+
+    background:#2EB8FF;
+
+    transform:translateY(-50%) scale(1.1);
+
+}
+
+/*==================================================
+SCROLL REVEAL
+==================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px) scale(.96);
+
+    filter:blur(8px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease,
+
+        filter .9s ease;
+
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0) scale(1);
+
+    filter:blur(0);
+
+}
+
+/* ==========================================
+   NEWS
+========================================== */
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+@media (max-width:992px){
+
+.news-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
