@@ -487,20 +487,6 @@ ul{
 
     }
 
-    .gallery-grid{
-
-    grid-template-columns:1fr;
-
-    gap:20px;
-
-}
-
-.gallery-item img{
-
-    height:260px;
-
-}
-
 }
 
 /* ==================================================
@@ -1928,5 +1914,58 @@ SCROLL REVEAL
     align-self:center;
 
     margin-top:15px;
+
+}
+
+
+/* ==========================================
+PLAYER DETAILS
+========================================== */
+
+.player-details{
+
+    margin:25px 0;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.player-details div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:13px 0;
+
+}
+
+.player-details div + div{
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+.player-details span{
+
+    color:#8FA8BC;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.player-details strong{
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
 
 }
