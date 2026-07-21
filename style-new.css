@@ -1853,3 +1853,80 @@ SCROLL REVEAL
 }
 
 }
+
+/* ==========================================
+   Contact
+========================================== */
+
+.contact-form{
+
+    max-width:800px;
+
+    margin:60px auto 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:17px;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#9fb5c9;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#2EB8FF;
+
+    box-shadow:0 0 20px rgba(46,184,255,.25);
+
+}
+
+.contact-form button{
+
+    align-self:center;
+
+    margin-top:15px;
+
+}
