@@ -645,6 +645,8 @@ ul{
 
     object-fit:cover;
 
+    object-position:center top;
+
     transition:.4s;
 
 }
@@ -1967,5 +1969,208 @@ PLAYER DETAILS
     font-size:15px;
 
     font-weight:600;
+
+}
+
+/* ==================================================
+   MIRKO BRUNO PAGE
+================================================== */
+
+.mirko-hero::before{
+
+    background:
+    linear-gradient(
+        rgba(5,15,25,.45),
+        rgba(5,15,25,.70)
+    ),
+    url("images/players/hero-mirko.jpg") center top/cover no-repeat;
+
+    animation:none;
+
+}
+
+/* ==================================================
+   PLAYER PROFILE
+================================================== */
+
+.player-profile{
+
+    padding:120px 0;
+
+    background:#081421;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:60px;
+
+}
+
+.profile-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.profile-card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.profile-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#2EB8FF;
+
+    box-shadow:0 15px 40px rgba(46,184,255,.25);
+
+}
+
+.profile-card span{
+
+    display:block;
+
+    color:#9fb4c7;
+
+    font-size:16px;
+
+    margin-bottom:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.profile-card strong{
+
+    font-size:28px;
+
+    color:white;
+
+}
+
+@media(max-width:768px){
+
+.profile-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.section-title{
+
+    font-size:36px;
+
+}
+
+}
+
+/* ==================================================
+   PLAYER ABOUT
+================================================== */
+
+.player-about{
+
+    padding:120px 0;
+
+    background:#06111D;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.player-text h2{
+
+    font-size:46px;
+
+    margin-bottom:30px;
+
+}
+
+.player-text p{
+
+    color:#cfd9e4;
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:25px;
+
+}
+
+.player-video{
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.player-video iframe{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    border:none;
+
+    display:block;
+
+}
+
+@media(max-width:768px){
+
+.about-grid{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+.player-text h2{
+
+    font-size:34px;
+
+}
 
 }
