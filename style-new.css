@@ -2228,3 +2228,79 @@ PLAYER DETAILS
     font-size:15px;
 
 }
+
+/*==================================================
+PLAYER LINKS
+==================================================*/
+
+.player-links{
+
+    padding:120px 0;
+
+    background:#081421;
+
+}
+
+.links-grid{
+
+    display:grid;
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.link-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.link-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#2EB8FF;
+
+    box-shadow:0 15px 40px rgba(46,184,255,.25);
+
+}
+
+.link-card h3{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.link-card p{
+
+    color:#bfd3e6;
+
+}
+
+.link-card i{
+
+    font-size:34px;
+
+    color:#2EB8FF;
+
+}
