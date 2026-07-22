@@ -2304,3 +2304,71 @@ PLAYER LINKS
     color:#2EB8FF;
 
 }
+
+@media (max-width:768px){
+
+.player-topbar{
+
+    display:none;
+
+}
+
+}
+
+/* ==================================================
+   MOBILE BACK BUTTON
+================================================== */
+
+.mobile-back{
+
+    display:none;
+
+}
+
+@media (max-width:768px){
+
+.mobile-back{
+
+    position:fixed;
+
+    top:20px;
+
+    left:20px;
+
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    background:rgba(8,18,32,.82);
+
+    backdrop-filter:blur(20px);
+
+    color:#fff;
+
+    font-size:22px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    z-index:3000;
+
+    transition:.35s;
+
+}
+
+.mobile-back:hover{
+
+    background:#2EB8FF;
+
+    transform:translateX(-3px);
+
+}
+
+}
