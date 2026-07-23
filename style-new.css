@@ -1983,11 +1983,13 @@ PLAYER DETAILS
         rgba(5,15,25,.45),
         rgba(5,15,25,.70)
     ),
-    url("images/players/hero-mirko.jpg") center top/cover no-repeat;
+    url("images/players/hero-mirko-bruno.jpg") center top/cover no-repeat;
 
     animation:none;
 
 }
+
+
 
 /* ==================================================
    PLAYER PROFILE
@@ -2451,19 +2453,11 @@ PLAYER LINKS
 
 }
 
-/* Mirko Bruno */
-
-.mirko-hero::before{
-
-    background-image:url("../images/players/hero-mirko-bruno.jpg");
-
-}
-
 @media (max-width:768px){
 
 .mirko-hero::before{
 
-    background:url("../images/players/hero-mirko-bruno-mobile.jpg")
+    background:url("images/players/hero-mirko-bruno-mobile.jpg")
     center center/cover no-repeat;
 
 }
