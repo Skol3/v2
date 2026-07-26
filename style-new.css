@@ -2643,3 +2643,768 @@ PLAYER LINKS
     gap:16px;
 
 }
+
+.team-tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin:0 30px 25px;
+
+}
+
+.team-tags span{
+
+background:#18324a;
+
+color:#7dc4ff;
+
+padding:8px 14px;
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:600;
+
+border:1px solid rgba(59,166,255,.25);
+
+}
+
+.team-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:12px;
+
+margin:35px 30px 35px;
+
+padding:14px 26px;
+
+background:#168dff;
+
+color:#fff !important;
+
+font-weight:700;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.3s;
+
+}
+
+.team-btn:hover{
+
+background:#0b74dc;
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 35px rgba(22,141,255,.35);
+
+}
+
+.team-btn:hover i{
+
+transform:translateX(6px);
+
+}
+
+.team-btn i{
+
+transition:.3s;
+
+}
+
+/*======================================
+        LEADERSHIP PAGES
+======================================*/
+
+.leader-hero{
+
+position:relative;
+
+height:85vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:linear-gradient(135deg,#07131f,#0f2438);
+
+overflow:hidden;
+
+}
+
+.leader-hero .overlay{
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65));
+
+}
+
+.leader-hero .hero-content{
+
+position:relative;
+
+z-index:2;
+
+text-align:center;
+
+color:#fff;
+
+}
+
+.leader-hero h1{
+
+font-size:68px;
+
+font-weight:800;
+
+letter-spacing:2px;
+
+margin-bottom:20px;
+
+}
+
+.leader-hero p{
+
+font-size:24px;
+
+line-height:1.7;
+
+color:#d7e3ef;
+
+}
+
+.leader-biography{
+
+padding:100px 0;
+
+background:#0a1826;
+
+}
+
+.leader-header{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.leader-header h2{
+
+font-size:44px;
+
+color:#fff;
+
+margin-bottom:15px;
+
+}
+
+.leader-subtitle{
+
+color:#42a9ff;
+
+font-size:18px;
+
+font-weight:600;
+
+}
+
+.leader-text{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.leader-text p{
+
+font-size:19px;
+
+line-height:2;
+
+color:#d6dee8;
+
+margin-bottom:30px;
+
+}
+
+/*======================================
+      PROFESSIONAL PROFILE
+======================================*/
+
+.leader-profile{
+
+padding:100px 0;
+
+background:#081624;
+
+}
+
+.leader-profile-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:28px;
+
+margin-top:60px;
+
+}
+
+.leader-box{
+
+background:#102132;
+
+padding:40px 30px;
+
+border-radius:24px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.leader-box:hover{
+
+transform:translateY(-8px);
+
+border-color:#2ea6ff;
+
+box-shadow:0 20px 45px rgba(0,120,255,.20);
+
+}
+
+.leader-box h3{
+
+font-size:42px;
+
+color:#2ea6ff;
+
+margin-bottom:15px;
+
+font-weight:800;
+
+}
+
+.leader-box span{
+
+color:#d9e4ee;
+
+font-size:17px;
+
+line-height:1.6;
+
+display:block;
+
+}
+
+/*======================================
+        AREAS OF EXPERTISE
+======================================*/
+
+.leader-expertise{
+
+padding:100px 0;
+
+background:#0b1a29;
+
+}
+
+.expertise-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+margin-top:60px;
+
+}
+
+.expertise-card{
+
+background:#102132;
+
+padding:45px 35px;
+
+border-radius:24px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.expertise-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#2ea6ff;
+
+box-shadow:0 25px 55px rgba(0,120,255,.25);
+
+}
+
+.expertise-icon{
+
+width:80px;
+
+height:80px;
+
+margin:auto;
+
+margin-bottom:30px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:#168dff;
+
+color:#fff;
+
+font-size:32px;
+
+}
+
+.expertise-card h3{
+
+color:#fff;
+
+font-size:24px;
+
+margin-bottom:20px;
+
+}
+
+.expertise-card p{
+
+color:#cfd8e3;
+
+line-height:1.9;
+
+font-size:16px;
+
+}
+
+/*======================================
+     LEADERSHIP PHILOSOPHY
+======================================*/
+
+.leadership-philosophy{
+
+padding:110px 0;
+
+background:#07131f;
+
+}
+
+.philosophy-box{
+
+max-width:900px;
+
+margin:auto;
+
+padding:70px 60px;
+
+background:#102132;
+
+border-radius:28px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.quote-icon{
+
+display:inline-flex;
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+background:#168dff;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:28px;
+
+color:#fff;
+
+margin-bottom:30px;
+
+}
+
+.philosophy-box h2{
+
+color:#fff;
+
+margin-bottom:35px;
+
+font-size:40px;
+
+}
+
+.philosophy-box blockquote{
+
+font-size:38px;
+
+font-weight:700;
+
+color:#2ea6ff;
+
+line-height:1.5;
+
+margin-bottom:40px;
+
+}
+
+.philosophy-box p{
+
+font-size:19px;
+
+line-height:2;
+
+color:#d8e3ed;
+
+margin-bottom:45px;
+
+}
+
+.philosophy-author strong{
+
+display:block;
+
+font-size:24px;
+
+color:#fff;
+
+margin-bottom:8px;
+
+}
+
+.philosophy-author span{
+
+color:#7fc6ff;
+
+font-size:16px;
+
+}
+
+/*======================================
+        LEADERSHIP CTA
+======================================*/
+
+.leader-cta{
+
+padding:110px 0;
+
+background:linear-gradient(135deg,#081624,#0d2236);
+
+text-align:center;
+
+}
+
+.leader-cta h2{
+
+font-size:48px;
+
+color:#fff;
+
+margin-bottom:25px;
+
+}
+
+.leader-cta p{
+
+max-width:850px;
+
+margin:0 auto 45px;
+
+font-size:20px;
+
+line-height:1.9;
+
+color:#d6e0ea;
+
+}
+
+.cta-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:14px;
+
+padding:18px 40px;
+
+background:#168dff;
+
+color:#fff;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:700;
+
+border-radius:50px;
+
+transition:.35s;
+
+}
+
+.cta-btn:hover{
+
+background:#0b74dc;
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 45px rgba(22,141,255,.35);
+
+}
+
+.cta-btn i{
+
+transition:.3s;
+
+}
+
+.cta-btn:hover i{
+
+transform:translateX(8px);
+
+}
+
+/*======================================
+      LEADERSHIP FOOTER
+======================================*/
+
+.leader-footer{
+
+padding:45px 0 80px;
+
+background:#081624;
+
+text-align:center;
+
+}
+
+.leader-back{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:12px;
+
+color:#7fc6ff;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.leader-back:hover{
+
+gap:18px;
+
+color:#fff;
+
+}
+
+/*======================================================
+           LEADERSHIP PAGES - MOBILE
+======================================================*/
+
+@media (max-width:768px){
+
+/* HERO */
+
+.leader-hero{
+
+height:70vh;
+
+padding:40px 20px;
+
+}
+
+.leader-hero h1{
+
+font-size:42px;
+
+line-height:1.1;
+
+margin-bottom:20px;
+
+}
+
+.leader-hero p{
+
+font-size:20px;
+
+line-height:1.6;
+
+}
+
+/* Sections */
+
+.leader-biography,
+.leader-profile,
+.leader-expertise,
+.leadership-philosophy,
+.leader-cta{
+
+padding:70px 20px;
+
+}
+
+/* Titles */
+
+.leader-header h2,
+.section-title,
+.philosophy-box h2,
+.leader-cta h2{
+
+font-size:34px;
+
+}
+
+/* Biography */
+
+.leader-text{
+
+max-width:100%;
+
+}
+
+.leader-text p{
+
+font-size:17px;
+
+line-height:1.9;
+
+}
+
+/* Professional Profile */
+
+.leader-profile-grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.leader-box{
+
+padding:30px 25px;
+
+}
+
+/* Expertise */
+
+.expertise-grid{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+.expertise-card{
+
+padding:35px 25px;
+
+}
+
+/* Philosophy */
+
+.philosophy-box{
+
+padding:45px 25px;
+
+}
+
+.philosophy-box blockquote{
+
+font-size:28px;
+
+line-height:1.5;
+
+}
+
+.philosophy-box p{
+
+font-size:17px;
+
+line-height:1.8;
+
+}
+
+/* CTA */
+
+.leader-cta p{
+
+font-size:17px;
+
+}
+
+.cta-btn{
+
+width:100%;
+
+justify-content:center;
+
+padding:18px;
+
+}
+
+/* Back button */
+
+.leader-back{
+
+font-size:16px;
+
+}
+
+}
