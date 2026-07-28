@@ -3408,3 +3408,104 @@ font-size:16px;
 }
 
 }
+
+/*======================================================
+           Constantin Hero
+======================================================*/
+
+
+.constantin-hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:flex-end;
+    padding:120px 0 80px;
+    background:
+        linear-gradient(to top,
+        rgba(0,0,0,.88),
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.15)),
+        url("images/team/hero-constantin.jpg") center top/cover no-repeat;
+}
+
+.profile-hero-content{
+    position:relative;
+    z-index:2;
+    max-width:760px;
+}
+
+.profile-label{
+    display:inline-block;
+    margin-bottom:18px;
+    padding:8px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(8px);
+    color:#fff;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:.8rem;
+}
+
+.constantin-hero h1{
+    color:#fff;
+    font-size:4rem;
+    margin-bottom:18px;
+}
+
+.constantin-hero p{
+    color:#fff;
+    font-size:1.3rem;
+    max-width:650px;
+}
+
+@media (max-width:768px){
+
+.constantin-hero{
+    min-height:100vh;
+    padding:90px 0 60px;
+
+    background:
+        linear-gradient(to top,
+        rgba(0,0,0,.90),
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.10)),
+        url("images/team/hero-constantin-mobile.jpg")
+        center top/cover no-repeat;
+}
+
+.constantin-hero h1{
+    font-size:2.4rem;
+}
+
+.constantin-hero p{
+    font-size:1rem;
+}
+
+}
+
+/*======================================================
+           Emanuel Cedron Hero
+======================================================*/
+
+.hero-emanuel{
+    position: relative;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.72) 0%,
+            rgba(0,0,0,.45) 38%,
+            rgba(0,0,0,.15) 65%,
+            rgba(0,0,0,.05) 100%
+        ),
+        url("images/team/hero-emanuel.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display:flex;
+    align-items:center;
+}
