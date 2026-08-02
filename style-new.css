@@ -3509,3 +3509,61 @@ font-size:16px;
     display:flex;
     align-items:center;
 }
+
+/* ===========================
+   Language Switcher
+=========================== */
+
+.language-switcher{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.language-switcher a{
+    color:#fff;
+    text-decoration:none;
+    opacity:.55;
+    transition:.3s;
+}
+
+.language-switcher a.active,
+.language-switcher a:hover{
+    opacity:1;
+}
+
+.language-switcher span{
+    color:rgba(255,255,255,.4);
+}
+
+/* Desktop */
+
+.desktop-language{
+    position:fixed;
+    top:35px;
+    right:35px;
+    z-index:1200;
+}
+
+/* Mobile */
+
+.mobile-language{
+    justify-content:center;
+    margin:35px 0;
+}
+
+@media (min-width:901px){
+    .mobile-language{
+        display:none;
+    }
+}
+
+@media (max-width:900px){
+    .desktop-language{
+        display:none;
+    }
+}
