@@ -3567,3 +3567,24 @@ font-size:16px;
         display:none;
     }
 }
+
+/* ==================================================
+   Santiago Hero
+================================================== */
+.santiago-hero{
+    background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.55)),
+    url("images/players/hero-santiago-cesanelli.jpg") center/cover no-repeat;
+}
+
+/* Mobile Hero */
+
+@media (max-width:768px){
+
+    .santiago-hero{
+        background:
+            linear-gradient(rgba(4,10,20,.45), rgba(4,10,20,.65)),
+            url("images/players/hero-santiago-cesanelli-mobile.jpg") center top/cover no-repeat;
+    }
+
+}
