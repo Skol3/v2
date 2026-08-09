@@ -3,7 +3,7 @@
 
 <head>
 
-    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+<link rel="icon" href="favicon/favicon.ico" sizes="any">
 
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 
@@ -25,6 +25,9 @@
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://argentinasportstars.com/contact.html">
+<link rel="alternate" hreflang="en" href="https://argentinasportstars.com/contact.html">
+<link rel="alternate" hreflang="es" href="https://argentinasportstars.com/es/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://argentinasportstars.com/contact.html">
 
 <link rel="stylesheet" href="style-new.css">
 
@@ -58,7 +61,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   "@type":"ContactPage",
   "name":"Contact Argentina Sport Stars",
   "url":"https://argentinasportstars.com/contact.html",
-  "description":"Contact Argentina Sport Stars regarding player representation, partnerships and football opportunities."
+  "description":"Contact Argentina Sport Stars regarding player representation, partnerships and football opportunities.",
+  "mainEntity": {
+    "@type":"SportsOrganization",
+    "name":"Argentina Sport Stars",
+    "url":"https://argentinasportstars.com",
+    "email":"constantinwunder@yahoo.com",
+    "telephone":"+4915776739515",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Amenabar 30",
+      "addressLocality":"Buenos Aires",
+      "postalCode":"C1426",
+      "addressCountry":"AR"
+    }
+  }
 }
 </script>
 
@@ -152,9 +169,9 @@ C1426
 <h3>Phone</h3>
 
 <p>
-
+<a href="tel:+4915776739515">
 +49 1577 6739515
-
+</a>
 </p>
 
 </div>
@@ -166,9 +183,9 @@ C1426
 <h3>Email</h3>
 
 <p>
-
+<a href="mailto:constantinwunder@yahoo.com">
 constantinwunder@yahoo.com
-
+</a>
 </p>
 
 </div>
@@ -201,21 +218,56 @@ Working with clubs and players across the globe.
 
 <h2>Send Us A Message</h2>
 
-<form class="contact-form reveal">
+<form
+    action="https://formsubmit.co/constantinwunder@yahoo.com"
+    method="POST"
+    class="contact-form reveal"
+>
 
-<input type="text" placeholder="Your Name" required>
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
 
-<input type="email" placeholder="Email Address" required>
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+    >
 
-<input type="text" placeholder="Subject">
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+    >
 
-<textarea rows="6" placeholder="Your Message"></textarea>
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Your Message"
+        required
+    ></textarea>
 
-<button type="submit" class="join-btn">
+    <!-- Защита от спама -->
+    <input
+        type="text"
+        name="_honey"
+        style="display:none"
+    >
 
-SEND MESSAGE
+    <!-- Отключает captcha после первого подтверждения -->
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+    >
 
-</button>
+    <button type="submit" class="join-btn">
+        SEND MESSAGE
+    </button>
 
 </form>
 
@@ -316,7 +368,7 @@ Let's talk about your future in professional football.
 
 </p>
 
-<a href="mailto:" class="join-btn">
+<a href="mailto:constantinwunder@yahoo.com" class="join-btn">
 
 CONTACT OUR TEAM
 
