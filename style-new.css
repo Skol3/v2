@@ -3639,7 +3639,7 @@ font-size:16px;
 *MOBILE*
 *==================================*/
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
 
     .players-filter {
         gap: 8px;
