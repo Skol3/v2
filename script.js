@@ -160,3 +160,55 @@ if (reveals.length) {
     revealOnScroll();
 
 }
+
+/*==================================*
+*PLAYERS FILTER*
+*==================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const filterButtons = document.querySelectorAll(".player-filter");
+    const playerCards = document.querySelectorAll(".player-card");
+
+    if (!filterButtons.length || !playerCards.length) return;
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const category = button.dataset.filter;
+
+            /* Active button */
+
+            filterButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            /* Show / hide players */
+
+            playerCards.forEach(card => {
+
+                const playerCategory = card.dataset.category;
+
+                if (
+                    category === "all" ||
+                    playerCategory === category
+                ) {
+
+                    card.style.display = "";
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+        });
+
+    });
+
+});

@@ -162,11 +162,31 @@ Listos para el siguiente nivel
 
 <div class="container">
 
-<h2>Jugadores Destacados</h2>
+<div class="players-filter">
+
+    <button class="player-filter" data-filter="all">
+        ALL
+    </button>
+
+    <button class="player-filter active" data-filter="men">
+        MEN
+    </button>
+
+    <button class="player-filter" data-filter="women">
+        WOMEN
+    </button>
+
+    <button class="player-filter" data-filter="youth">
+        YOUTH
+    </button>
+
+</div>
+
+<h2>Featured Players</h2>
 
 <div class="players-grid">
 
-    <div class="player-card reveal">
+    <div class="player-card reveal" data-category="men">
 
     <img src="../images/players/mirko-bruno.jpg" alt="Mirko Bruno">
 
@@ -216,7 +236,7 @@ Listos para el siguiente nivel
     </div>
 </div>     
 
-<div class="player-card reveal">
+<div class="player-card reveal" data-category="men">
 
     <img src="../images/players/santiago-cesanelli.jpg" alt="Santiago Cesanelli">
 

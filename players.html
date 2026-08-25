@@ -171,13 +171,33 @@ Ready For The Next Level
 
 <div class="container">
 
+<div class="players-filter">
+
+    <button class="player-filter" data-filter="all">
+        ALL
+    </button>
+
+    <button class="player-filter active" data-filter="men">
+        MEN
+    </button>
+
+    <button class="player-filter" data-filter="women">
+        WOMEN
+    </button>
+
+    <button class="player-filter" data-filter="youth">
+        YOUTH
+    </button>
+
+</div>
+
 <h2>Featured Players</h2>
 
 <div class="players-grid">
 
     <!-- MIRKO BRUNO -->
 
-    <div class="player-card reveal">
+    <div class="player-card reveal" data-category="men">
 
         <img src="images/players/mirko-bruno.jpg" alt="Mirko Bruno">
 
@@ -229,7 +249,7 @@ Ready For The Next Level
 
     <!-- SANTIAGO CESANELLI -->
 
-    <div class="player-card reveal">
+    <div class="player-card reveal" data-category="men">
 
         <img src="images/players/santiago-cesanelli.jpg" alt="Santiago Cesanelli">
 
