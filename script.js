@@ -212,3 +212,122 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/*==================================*
+*TRAINING FILTERS*
+*==================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const typeButtons = document.querySelectorAll(
+        ".training-type-filter button"
+    );
+
+    const ageButtons = document.querySelectorAll(
+        ".training-age-filter button"
+    );
+
+    const trainingCards = document.querySelectorAll(
+        ".training-card"
+    );
+
+    // Если это не training.html — ничего не делаем
+    if (
+        !typeButtons.length ||
+        !ageButtons.length ||
+        !trainingCards.length
+    ) {
+        return;
+    }
+
+    let selectedType = "All";
+    let selectedAge = "All Ages";
+
+
+    /*----------------------------------*
+    * TYPE FILTER
+    *----------------------------------*/
+
+    typeButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            typeButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            selectedType = button.textContent.trim();
+
+            filterTraining();
+
+        });
+
+    });
+
+
+    /*----------------------------------*
+    * AGE FILTER
+    *----------------------------------*/
+
+    ageButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            ageButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            selectedAge = button.textContent.trim();
+
+            filterTraining();
+
+        });
+
+    });
+
+
+    /*----------------------------------*
+    * FILTER FUNCTION
+    *----------------------------------*/
+
+    function filterTraining() {
+
+        trainingCards.forEach(card => {
+
+            const tag = card
+                .querySelector(".training-tag")
+                ?.textContent
+                .trim();
+
+            if (!tag) return;
+
+
+            const typeMatch =
+                selectedType === "All" ||
+                tag.includes(selectedType);
+
+
+            const ageMatch =
+                selectedAge === "All Ages" ||
+                tag.includes(selectedAge);
+
+
+            if (typeMatch && ageMatch) {
+
+                card.style.display = "";
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    }
+
+});
