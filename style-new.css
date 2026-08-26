@@ -1729,6 +1729,24 @@ GALLERY OVERLAY
 
 }
 
+.gallery-overlay a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-decoration: none;
+}
+
+.gallery-overlay a i {
+    margin-bottom: 20px;
+}
+
+.gallery-overlay a h3 {
+    margin: 0;
+}
+
 /*==================================================
 LIGHTBOX ARROWS
 ==================================================*/
