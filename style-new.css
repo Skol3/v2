@@ -3954,3 +3954,544 @@ font-size:16px;
     }
 
 }
+
+/* =========================================================
+   MATCHDAY REPORT 2
+   AALEN vs ULM
+   ========================================================= */
+
+.matchday-report {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.matchday-report .section-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.matchday-report .section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.65;
+}
+
+.matchday-report .section-header h2 {
+    margin: 0;
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.matchday-report .section-subtitle {
+    margin-top: 15px;
+    font-size: 16px;
+    opacity: 0.65;
+}
+
+
+/* ---------------------------------------------------------
+   MATCH INFORMATION
+   --------------------------------------------------------- */
+
+.matchday-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    margin-bottom: 45px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.matchday-info-item {
+    padding: 25px 22px;
+    background: rgba(255,255,255,0.025);
+    text-align: center;
+}
+
+.matchday-info-item:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.matchday-info .info-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.matchday-info-item strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   INTRODUCTION
+   --------------------------------------------------------- */
+
+.matchday-content {
+    margin-bottom: 60px;
+}
+
+.matchday-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.matchday-text .article-kicker,
+.gallery-heading .article-kicker,
+.story-heading .article-kicker {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    opacity: 0.55;
+}
+
+.matchday-text h3 {
+    margin: 0 0 25px;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.matchday-text p {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    font-size: 16px;
+    line-height: 1.9;
+    opacity: 0.78;
+}
+
+
+/* ---------------------------------------------------------
+   MATCH STORY
+   --------------------------------------------------------- */
+
+.matchday-story {
+    margin: 60px 0;
+    padding: 50px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.story-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.story-heading h3 {
+    margin: 0;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 700;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.story-item {
+    position: relative;
+    padding: 30px 30px 30px 85px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.16);
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.story-item:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.045);
+}
+
+.story-number {
+    position: absolute;
+    left: 25px;
+    top: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    background: rgba(255,255,255,0.08);
+}
+
+.story-item h4 {
+    margin: 0 0 12px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.story-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.75;
+    opacity: 0.68;
+}
+
+
+/* ---------------------------------------------------------
+   GALLERY HEADINGS
+   --------------------------------------------------------- */
+
+.gallery-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.gallery-heading h3 {
+    margin: 0 0 12px;
+    font-size: clamp(25px, 4vw, 36px);
+    font-weight: 700;
+}
+
+.gallery-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.65;
+}
+
+
+/* ---------------------------------------------------------
+   PHOTO GALLERY
+   --------------------------------------------------------- */
+
+.matchday-gallery {
+    margin: 70px 0;
+}
+
+.matchday-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.matchday-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+}
+
+.matchday-photo img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.matchday-photo:hover img {
+    transform: scale(1.05);
+}
+
+
+/* ---------------------------------------------------------
+   VIDEO SECTION
+   --------------------------------------------------------- */
+
+.matchday-video-section {
+    margin: 70px 0;
+}
+
+.matchday-video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.matchday-video {
+    overflow: hidden;
+    border-radius: 16px;
+    background: #000;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.matchday-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #000;
+}
+
+
+/* ---------------------------------------------------------
+   CLOSING
+   --------------------------------------------------------- */
+
+.matchday-closing {
+    max-width: 850px;
+    margin: 80px auto 40px;
+    text-align: center;
+}
+
+.closing-line {
+    width: 60px;
+    height: 2px;
+    margin: 0 auto 30px;
+    background: currentColor;
+    opacity: 0.35;
+}
+
+.matchday-closing h3 {
+    margin: 0 0 20px;
+    font-size: clamp(25px, 4vw, 36px);
+    font-weight: 700;
+}
+
+.matchday-closing p {
+    margin: 0 auto 16px;
+    font-size: 15px;
+    line-height: 1.85;
+    opacity: 0.68;
+}
+
+
+/* ---------------------------------------------------------
+   REPORT DATE
+   --------------------------------------------------------- */
+
+.matchday-report-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 50px;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    opacity: 0.45;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .matchday-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .matchday-photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .matchday-video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .matchday-story {
+        padding: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .matchday-report {
+        margin: 55px auto;
+        padding: 0 16px;
+    }
+
+
+    /* Header */
+
+    .matchday-report .section-header {
+        margin-bottom: 35px;
+    }
+
+    .matchday-report .section-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .matchday-report .section-header h2 {
+        font-size: 34px;
+    }
+
+    .matchday-report .section-subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* Match information */
+
+    .matchday-info {
+        grid-template-columns: 1fr;
+        border-radius: 14px;
+    }
+
+    .matchday-info-item {
+        padding: 20px 15px;
+    }
+
+
+    /* Introduction */
+
+    .matchday-text h3 {
+        font-size: 27px;
+    }
+
+    .matchday-text p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+
+    /* Story */
+
+    .matchday-story {
+        margin: 45px 0;
+        padding: 25px 18px;
+        border-radius: 16px;
+    }
+
+    .story-heading {
+        margin-bottom: 25px;
+    }
+
+    .story-heading h3 {
+        font-size: 27px;
+    }
+
+    .story-grid {
+        gap: 15px;
+    }
+
+    .story-item {
+        padding: 25px 20px 25px 70px;
+    }
+
+    .story-number {
+        left: 18px;
+        top: 22px;
+        width: 34px;
+        height: 34px;
+    }
+
+    .story-item h4 {
+        font-size: 17px;
+    }
+
+    .story-item p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* Photo gallery */
+
+    .matchday-gallery {
+        margin: 50px 0;
+    }
+
+    .matchday-photo-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .matchday-photo img {
+        height: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+
+    /* Videos */
+
+    .matchday-video-section {
+        margin: 50px 0;
+    }
+
+    .matchday-video-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .matchday-video {
+        border-radius: 12px;
+    }
+
+
+    /* Closing */
+
+    .matchday-closing {
+        margin: 55px auto 30px;
+    }
+
+    .matchday-closing h3 {
+        font-size: 26px;
+    }
+
+    .matchday-closing p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+
+    /* Date */
+
+    .matchday-report-date {
+        flex-wrap: wrap;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+}
