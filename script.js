@@ -7,24 +7,81 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileBtn = document.getElementById("mobileBtn");
     const mobileMenu = document.getElementById("mobileMenu");
     const mobileClose = document.getElementById("mobileClose");
+    const menuOverlay = document.getElementById("menuOverlay");
 
-    if (mobileBtn && mobileMenu && mobileClose) {
+    if (!mobileBtn || !mobileMenu) return;
 
-        mobileBtn.addEventListener("click", () => {
-            mobileMenu.classList.add("show");
-        });
+    function openMenu() {
+        mobileMenu.classList.add("show");
 
-        mobileClose.addEventListener("click", () => {
-            mobileMenu.classList.remove("show");
-        });
+        if (menuOverlay) {
+            menuOverlay.classList.add("show");
+        }
 
-        document.querySelectorAll(".mobile-menu a").forEach(link => {
-            link.addEventListener("click", () => {
-                mobileMenu.classList.remove("show");
-            });
-        });
+        mobileBtn.classList.add("active");
+        mobileBtn.setAttribute("aria-expanded", "true");
+        mobileMenu.setAttribute("aria-hidden", "false");
 
+        document.body.classList.add("menu-open");
     }
+
+    function closeMenu() {
+        mobileMenu.classList.remove("show");
+
+        if (menuOverlay) {
+            menuOverlay.classList.remove("show");
+        }
+
+        mobileBtn.classList.remove("active");
+        mobileBtn.setAttribute("aria-expanded", "false");
+        mobileMenu.setAttribute("aria-hidden", "true");
+
+        document.body.classList.remove("menu-open");
+    }
+
+    function toggleMenu() {
+        if (mobileMenu.classList.contains("show")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+
+    // Нажатие на кнопку ☰ открывает или закрывает меню
+    mobileBtn.addEventListener("click", toggleMenu);
+
+    // Нажатие на крестик закрывает меню
+    if (mobileClose) {
+        mobileClose.addEventListener("click", closeMenu);
+    }
+
+    // Нажатие на затемнённую область закрывает меню
+    if (menuOverlay) {
+        menuOverlay.addEventListener("click", closeMenu);
+    }
+
+    // Выбор пункта меню закрывает меню
+    mobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    // Нажатие Escape закрывает меню
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
+
+    // При переходе на десктопный размер закрываем мобильное меню
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+
+    // Начальное состояние
+    mobileBtn.setAttribute("aria-expanded", "false");
+    mobileMenu.setAttribute("aria-hidden", "true");
 
 });
 
