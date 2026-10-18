@@ -50,11 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Нажатие на кнопку ☰ открывает или закрывает меню
     mobileBtn.addEventListener("click", toggleMenu);
 
-    // Нажатие на крестик закрывает меню
-    if (mobileClose) {
-        mobileClose.addEventListener("click", closeMenu);
-    }
-
     // Нажатие на затемнённую область закрывает меню
     if (menuOverlay) {
         menuOverlay.addEventListener("click", closeMenu);

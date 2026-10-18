@@ -4611,31 +4611,6 @@ font-size:16px;
         pointer-events: auto;
     }
 
-    /* Close button */
-    .mobile-menu .mobile-close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 10003;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 58px;
-        height: 58px;
-        padding: 0;
-        border: 1px solid rgba(255,255,255,.08);
-        border-radius: 18px;
-        background: rgba(8,18,32,.95);
-        color: #fff;
-        font-size: 34px;
-        cursor: pointer;
-        pointer-events: auto;
-    }
-
-    .mobile-menu .mobile-close i {
-        pointer-events: none;
-    }
-
     /* Language links: EN | ES | DE | IT | PT */
     .mobile-menu .mobile-language {
         display: flex !important;
@@ -4716,8 +4691,7 @@ font-size:16px;
 /* Hide mobile menu on desktop */
 @media (min-width: 769px) {
     .mobile-menu-btn,
-    .mobile-menu,
-    .mobile-close {
+    .mobile-menu {
         display: none !important;
     }
 }
