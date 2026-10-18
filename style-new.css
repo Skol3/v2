@@ -4705,3 +4705,50 @@ font-size:16px;
         font-size: 21px;
     }
 }
+
+/* =========================================
+   FIX: MOBILE LANGUAGE SWITCHER
+========================================= */
+
+@media (max-width: 900px) {
+
+    /* Hide desktop language switcher */
+    .desktop-language {
+        display: none !important;
+    }
+
+    /* Keep all languages in one horizontal row */
+    .mobile-menu .mobile-language {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        width: 100%;
+        max-width: 100%;
+        margin: 25px 0;
+        padding: 0 10px;
+    }
+
+    /* Prevent menu link styles from enlarging language links */
+    .mobile-menu .mobile-language a {
+        display: inline-block;
+        flex: 0 0 auto;
+
+        margin: 0 !important;
+        padding: 5px 0;
+
+        font-size: 13px !important;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        white-space: nowrap;
+    }
+
+    .mobile-menu .mobile-language span {
+        flex: 0 0 auto;
+        font-size: 12px;
+    }
+
+}
