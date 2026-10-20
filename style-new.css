@@ -4700,46 +4700,6 @@ font-size:16px;
         visibility: visible;
         pointer-events: auto;
     }
-
-    /* Language links: EN | ES | DE | IT | PT */
-    .mobile-menu .mobile-language {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: clamp(6px, 2vw, 12px);
-        width: 100%;
-        margin: 15px 0 30px;
-        padding: 0 5px;
-    }
-
-    .mobile-menu .mobile-language a {
-        display: inline-block;
-        flex: 0 0 auto;
-        margin: 0;
-        padding: 8px 0;
-        color: #fff;
-        font-size: 19px !important;
-        font-weight: 700;
-        line-height: 1.5;
-        letter-spacing: .02em;
-        white-space: nowrap;
-        opacity: .7;
-    }
-
-    .mobile-menu .mobile-language span {
-        flex: 0 0 auto;
-        color: rgba(255,255,255,.4);
-        font-size: 14px;
-    }
-
-    .mobile-menu .mobile-language a.active,
-    .mobile-menu .mobile-language a[aria-current="page"] {
-        color: #2EB8FF !important;
-        opacity: 1;
-    }
-
     /* Main menu links */
     .mobile-menu > a {
         display: block;
