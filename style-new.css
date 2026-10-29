@@ -4972,7 +4972,7 @@ font-size:16px;
    MOBILE PHONES
 ======================================== */
 
-@media (max-width: 520px) {
+@media (max-width: 768px) {
 
     .offices-grid {
         grid-template-columns: minmax(0, 1fr);
